@@ -2,8 +2,7 @@
 
 Topic on the jetson side - face/image
 
-I should have named it jetson/image .The publisher publishes the face image read from the camera to the face/image topic.  
-The subscriber subcribes to face/image topic to receive the face image read from the camera and then forwards it to the remote by publishing to the remoteface/image topic. I could have more topics like face/video and have a subscriber subcribing to all images and videos like face/#
+I should have named it jetson/image .The publisher publishes the face image read from the camera to the face/image topic. The subscriber subcribes to face/image topic to receive the face image read from the camera and then forwards it to the remote by publishing to the remoteface/image topic. I could have more topics like face/video and have a subscriber subcribing to all images and videos like face/#
 
 Topic on the IBM VSI side - remoteface/image
 
