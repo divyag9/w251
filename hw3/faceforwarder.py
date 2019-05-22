@@ -2,9 +2,9 @@ import paho.mqtt.client as mqtt
 import time
 
 def on_message(client, userdata, message):
-    print("message received on jetson")
+    print("message received on jetson subscriber")
     remote_client.publish("remoteface/image", message.payload)
-    print("message published to cloud mqtt broker")
+    print("message published to cloud(ibm vsi) topic")
 
 # remote mosquitto broker address on IBM virtual server
 remote_broker_address="169.62.251.227"
