@@ -1,6 +1,9 @@
 ### Mosquitto
+
 Topic on the jetson side - face/image
+
 Topic on the IBM VSI side - remoteface/image
+
 QoS used was the default of 0
 
 IBM object storage link - https://s3.us-south.cloud-object-storage.appdomain.cloud/w251-divya
