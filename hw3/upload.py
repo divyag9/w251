@@ -25,7 +25,7 @@ cos = ibm_boto3.resource('s3',
 i = 1
 def on_message(client, userdata, message):
     global i
-    print("message received on IBM VSI")
+    print("message received on IBM VSI subscriber")
     key = 'face' + str(i) + '.png'
     cos.Bucket(name='w251-divya').put_object(Key=key, Body=message.payload)
     print("message uploaded to object storage")
