@@ -4,7 +4,7 @@
 
 Overall V100 is 3 times faster than P100.\
 In case of V100 for training with 2 epochs trained the model from the begining with 2 epochs.\
-In case of P100 for training with 2 epochs, used the model that was originally trained for 1 epoch. Loaded the saved model and trained the saved model for 1 more epoch with half the learning rate.
+In case of P100 for training with 2 epochs, used the model that was originally trained for 1 epoch. Loaded the saved model and trained the saved model for 1 more epoch with half the learning rate( since the model was already trained, to avoid destroying the weights)
 
 
 V100 1 epoch \
