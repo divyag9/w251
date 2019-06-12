@@ -23,7 +23,7 @@ Validation run time \
 100% 15625/15625 [1:00:41<00:00, 4.29it/s]
 
 P100 after 2nd epoch \
-100% 1/1 [6:10:04<00:00, 22204.65s/it, avg_accuracy=0.959, avg_loss=0.0975]
+100% 1/1 [6:10:04<00:00, 22204.65s/it, avg_accuracy=0.959, avg_loss=0.0975] \
 Validation run time \
 100% 15625/15625 [1:00:46<00:00, 4.29it/s]
 
@@ -33,12 +33,12 @@ Validation run time \
 V100 1 epoch - 0.96990 \
 V100 2 epochs - 0.96968 \
 P100 1 epoch - 0.96990 \
-P100 2 epochs - 0.96977\
+P100 2 epochs - 0.96977
 
 ### Sentences
 
 1 epoch \
-P100 and V100
+P100 and V100 \
 **highest toxicity** - "Trump is a mentally unbalanced buffoon.\nHe's unfit for office.\nHe's the largest threat to our nation's security and Congress should exercise it's responsibility and remove him now.\nHe's a petty con man, a racist supremacist, a sexual predator and a traitor.\nWorst ever." \
 **lowest toxicity** - "Rolling Stone supports the nationalization of the means of production*, democratization of the workplace*, income distribution*, food and education for the poor* and peace and prosperity*??  Who knew?\n\nWow, I should subscribe.\n\n\n*Look those things up"
 
