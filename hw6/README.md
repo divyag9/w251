@@ -44,7 +44,7 @@ V100 \
 
 P100 \
 **highest toxicity** - "What an arrogant piece of shit. This arrogant ..."(forgot to get the complete sentence) \
-**lowest toxicity** - "NO , massive tax increases on businesses means..."(forgot to get the complete sentence) \
+**lowest toxicity** - "NO , massive tax increases on businesses means..."(forgot to get the complete sentence)
 
 2 epochs \
 P100 \
