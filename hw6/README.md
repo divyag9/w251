@@ -2,7 +2,9 @@ HW6
 
 ### Runtimes
 
-Overall V100 is 3 times faster than P100
+Overall V100 is 3 times faster than P100.\
+In case of V100 trained the model for 2 epochs.\
+In case of P100 for training with 2 epochs, used the model that was originally trained for 1 epoch. Loaded the saved model trained the saved model for 1 more epoch with half the learning rate. \
 
 
 V100 1 epoch \
@@ -20,15 +22,13 @@ P100 1 epoch \
 Validation run time \
 100% 15625/15625 [1:00:41<00:00, 4.29it/s]
 
-In case of V100 trained the model for 2 epochs
 
-In case of P100 for training with 2 epochs, used the model that was originally trained for 1 epoch. Loaded the saved model trained the saved model for 1 more epoch with half the learning rate.
 
 ### AUC
-V100 1 epoch - 0.96990
-V100 2 epochs - 0.96968
-P100 1 epoch - 0.96990
-P100 2 epochs - 
+V100 1 epoch - 0.96990 \
+V100 2 epochs - 0.96968 \
+P100 1 epoch - 0.96990 \
+P100 2 epochs - \
 
 ### Sentences
 
