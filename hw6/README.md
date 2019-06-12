@@ -32,15 +32,19 @@ Validation run time \
 ### AUC
 V100 1 epoch - 0.96990 \
 V100 2 epochs - 0.96968 \
-P100 1 epoch - 0.96990 \
+P100 1 epoch - 0.9700 \
 P100 2 epochs - 0.96977
 
 ### Sentences
 
 1 epoch \
-P100 and V100 \
+V100 \
 **highest toxicity** - "Trump is a mentally unbalanced buffoon.\nHe's unfit for office.\nHe's the largest threat to our nation's security and Congress should exercise it's responsibility and remove him now.\nHe's a petty con man, a racist supremacist, a sexual predator and a traitor.\nWorst ever." \
 **lowest toxicity** - "Rolling Stone supports the nationalization of the means of production*, democratization of the workplace*, income distribution*, food and education for the poor* and peace and prosperity*??  Who knew?\n\nWow, I should subscribe.\n\n\n*Look those things up"
+
+P100 \
+**highest toxicity** - "What an arrogant piece of shit. This arrogant ..."(forgot to get the complete sentence) \
+**lowest toxicity** - "NO , massive tax increases on businesses means..."(forgot to get the complete sentence) \
 
 2 epochs \
 P100 \
@@ -49,7 +53,7 @@ P100 \
 
 V100 \
 **highest toxicity** - "you are a fool" \
-**lowest toxicity** - "Good idea too have begun your comment with a c..."
+**lowest toxicity** - "Good idea too have begun your comment with a c..." (forgot to get the complete sentence)
 
 
 
