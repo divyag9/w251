@@ -1,10 +1,11 @@
 HW6
 
-Runtimes
+### Runtimes
+
 V100 is 3 times faster than P100
 
 
-V100 1 epoch
+V100 1 epoch \
 100% 1/1 [1:51:59<00:00, 6719.81s/it, avg_accuracy=0.952, avg_loss=0.121]
 Validation run time
 100% 15625/15625 [15:51<00:00, 16.30it/s]
