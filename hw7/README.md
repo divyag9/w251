@@ -4,15 +4,13 @@ IBM object storage link - https://s3.us-south.cloud-object-storage.appdomain.clo
 
 * Describe your solution in detail. What neural network did you use? What dataset was it trained on? What accuracy does it achieve? \
 For the face detection used multitask cascaded convolutional networks model instead of the OpenCV cascade face classifier. \
-Neural Network:
+Neural Network:\
 This model consists of  three-stage multi-task deep convolutional networks
-
-Dataset:
+Dataset:\
 WIDER FACE dataset was used for training. It consists of 393,703 labeled face bounding boxes \
 in 32,203 images where 50% of them were used for testing into three
 subsets according to the difficulty of images, 40% for training
 and the remaining for validation \
-
 Accuracy is around 95% \
 https://arxiv.org/ftp/arxiv/papers/1604/1604.02878.pdf \
 https://github.com/ipazc/mtcnn
