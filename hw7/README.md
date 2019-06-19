@@ -2,7 +2,7 @@ HW07
 
 IBM object storage link - https://s3.us-south.cloud-object-storage.appdomain.cloud/w251-divya
 
-Describe your solution in detail. What neural network did you use? What dataset was it trained on? What accuracy does it achieve?
+Describe your solution in detail. What neural network did you use? What dataset was it trained on? What accuracy does it achieve? \
 For the face detection used multitask cascaded convolutional networks model instead of the OpenCV cascade face classifier. /
 Neural Network:
 This model consists of  three-stage multi-task deep convolutional networks
