@@ -1,0 +1,11 @@
+FROM tensorflow
+
+RUN apt update
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt install -y python3-opencv python3-pip vim-tiny
+RUN pip3 install paho-mqtt
+RUN pip3 install mtcnn
+
+
