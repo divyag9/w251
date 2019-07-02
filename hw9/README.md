@@ -6,10 +6,10 @@ HW 09 Answers
 •	Do you think your model is fully trained? How can you tell? \
   I think it is trained since the train loss has reduced and has flattened out to a point where it might not reduce further.
 
-•	Were you overfitting?
+•	Were you overfitting? \
   I don't think the model was overfitting since the train loss and eval loss are approximately at the same rate. Also I didn't train it   till too long. Also I think there is enough training data.
 
-•	Were your GPUs fully utilized?
+•	Were your GPUs fully utilized? \
   The GPUs were fully utilized
 
 •	Did you monitor network traffic (hint: apt install nmon ) ? Was network the bottleneck? \
@@ -25,7 +25,13 @@ HW 09 Answers
   train.clean.de.shuffled.BPE_common.32K.tok – 1023MB – 4524869 lines
 
 •	What are the files that a TF checkpoint is comprised of? \
-  It consists of the checkpoint, the model data, index and meta files
+  It consists of the checkpoint, the model data, index and meta files \
+  checkpoint \
+  events.out.tfevents.timestamp.hostname \
+  graph.pbtxt \
+  model.ckpt-0.data-00000-of-00001 \
+  model.ckpt-0.index \
+  model.ckpt-0.meta
 
 •	How big is your resulting model checkpoint (mb)?  \
   The resulting model checkpoint was 853MB
