@@ -1,24 +1,36 @@
-HW 09
-•	How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while) – 124K steps – 2days 13 hours
+HW 09 Answers
 
-•	Do you think your model is fully trained? How can you tell?
+•	How long does it take to complete the training run? (hint: this session is on distributed training, so it will take a while) \
+  It took approximately 2days and  11 hours to train around 120K steps
 
-•	Were you overfitting? – not really since the train loss and eval loss are approximately same, the train loss is not very low
+•	Do you think your model is fully trained? How can you tell? \
+  I think it is trained since the train loss has reduced and has flattened out to a point where it might not reduce further.
 
-•	Were your GPUs fully utilized? – GPU fully utilized
+•	Were you overfitting?
+  I don't think the model was overfitting since the train loss and eval loss are approximately at the same rate. Also I didn't train it   till too long. Also I think there is enough training data.
 
-•	Did you monitor network traffic (hint: apt install nmon ) ? Was network the bottleneck? No 
+•	Were your GPUs fully utilized?
+  The GPUs were fully utilized
 
-•	Take a look at the plot of the learning rate and then check the config file. Can you explain this setting? - varying the learning rate during the course of training
+•	Did you monitor network traffic (hint: apt install nmon ) ? Was network the bottleneck? \
+  The network was not the bottleneck, even though we were allocated  1000 Mbps looks like the internal network is faster than advertised 
+  so the rate was at ???
+  
+•	Take a look at the plot of the learning rate and then check the config file. Can you explain this setting? \
+  The learning rate was based on the transformer policy. Increasing the learning rate linearly for the first warmup_steps training steps,
+  and decreasing it thereafter proportionally to the inverse square root of the step number. We see that variation in the graph
 
-•	How big was your training set (mb)? How many training lines did it contain?
-958585615 Jun 30 19:00 train.clean.en.shuffled.BPE_common.32K.tok – 914MB – 4524869 lines
-1022911003 Jun 30 19:12 train.clean.de.shuffled.BPE_common.32K.tok – 976MB – 4524869 lines
+•	How big was your training set (mb)? How many training lines did it contain? \
+  train.clean.en.shuffled.BPE_common.32K.tok – 959MB – 4524869 lines \
+  train.clean.de.shuffled.BPE_common.32K.tok – 1023MB – 4524869 lines
 
-•	What are the files that a TF checkpoint is comprised of? - 
+•	What are the files that a TF checkpoint is comprised of? \
+  It consists of the checkpoint, the model data, index and meta files
 
-•	How big is your resulting model checkpoint (mb)? - 852267044
+•	How big is your resulting model checkpoint (mb)?  \
+  The resulting model checkpoint was 853MB
 
-•	Remember the definition of a "step". How long did an average step take? 1.6 seconds
+•	Remember the definition of a "step". How long did an average step take? \
+  The average step took around 1.6 seconds
 
-•	How does that correlate with the observed network utilization between nodes?
+•	How does that correlate with the observed network utilization between nodes? \
