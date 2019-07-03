@@ -13,8 +13,7 @@ HW 09 Answers
   The GPUs were fully utilized
 
 •	Did you monitor network traffic (hint: apt install nmon ) ? Was network the bottleneck? \
-  The network was not the bottleneck, even though we were allocated  1000 Mbps looks like the internal network is faster than advertised 
-  so the rate was at ???
+  The network was not the bottleneck, even though we were allocated  1000 Mbps looks like the internal network is faster than advertised, the rate was at 203551.3 KB/s for receive and 196851.3 KB/s for transmit
   
 •	Take a look at the plot of the learning rate and then check the config file. Can you explain this setting? \
   The learning rate was based on the transformer policy. Increasing the learning rate linearly for the first warmup_steps training steps,
@@ -40,3 +39,4 @@ HW 09 Answers
   The average step took around 1.6 seconds
 
 •	How does that correlate with the observed network utilization between nodes? \
+  In general if there is a bottleneck in the network then the time taken by a step may be more, but in our case we saw that    the network utilization between nodes was not a problem, we were provisioned more than the allocated network. 
